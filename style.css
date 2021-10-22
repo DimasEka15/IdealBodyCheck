@@ -10,13 +10,11 @@ body {
 
 .container {
   padding: 0 80px;
-  height: 70%;
   display: grid;
   grid-template-rows: 100px 100%;
   grid-template-areas:
     "header"
     "main";
-  align-items: center;
   justify-content: center;
 }
 
@@ -27,9 +25,18 @@ header {
 
 main {
   grid-area: main;
-  display: flex;
+  display: grid;
+  grid-template-areas: "main-1 main-2";
   justify-content: space-evenly;
   align-items: center;
+}
+
+.main-1 {
+  grid-area: main-1;
+}
+
+.main-2 {
+  grid-area: main-2;
 }
 
 .logo {
