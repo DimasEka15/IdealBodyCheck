@@ -11,7 +11,7 @@ body {
 .container {
   padding: 0 80px;
   display: grid;
-  grid-template-rows: 100px 100%;
+  grid-template-rows: 100px;
   grid-template-areas:
     "header"
     "main";
